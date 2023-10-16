@@ -1,0 +1,11 @@
+body {
+    @apply w-screen h-screen flex justify-center items-center overflow-hidden 
+    bg-white  text-zinc-900
+    dark:bg-zinc-900 dark:text-white font-sans
+}
+.main{
+    @apply w-full h-full block
+}
+.page-section{
+    @apply w-screen h-screen flex justify-center items-center
+}

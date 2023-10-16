@@ -1,0 +1,21 @@
+.HOME{
+
+}
+.HOME .intro{
+    @apply mr-auto ml-10 mt-10 mb-auto
+}
+
+.main-heading{
+    @apply mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl 
+}
+.profession {
+    @apply mt-8 font-semibold  uppercase    
+    text-base 2xl:text-lg leading-none overflow-hidden h-fit 
+}
+.different-profs{
+    @apply text-emerald-500 font-bold inline-block mr-2
+    py-2 translate-y-full
+} 
+.grad-span{
+    @apply border px-3 py-2 ml-2 rounded inline-block
+}
