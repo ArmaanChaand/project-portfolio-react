@@ -9,3 +9,17 @@ body {
 .page-section{
     @apply w-screen h-screen flex justify-center items-center
 }
+.nav{
+    @apply fixed 
+    bottom-0 left-0 
+}
+.tab-btns{
+    @apply grid grid-cols-3 p-2 bg-zinc-800 rounded gap-2
+}
+.tab-btns .nav-tab{
+    @apply w-24 flex justify-center items-center py-2 rounded font-semibold uppercase
+    text-sm outline-1
+}
+.tab-btns .nav-tab.active{
+    @apply bg-zinc-900 dark:bg-white text-white dark:text-zinc-900
+}
