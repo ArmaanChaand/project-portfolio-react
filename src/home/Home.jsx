@@ -19,17 +19,17 @@ export default function Home(){
         <section className="HOME page-section">
             <div className="intro">
                 <h1 className="main-heading">
-                    Hi, I am Armaan Chaand,
+                   I Love You Baby
                     <br/>
-                    <span className="text-[0.9em] opacity-80">Welcome to my portfolio.</span>
+                    <span className="text-[0.9em] opacity-80">❤️❤️❤️</span>
                     <br/>
-                    <span className="text-[0.8em] opacity-80">I'm a ...</span>
+                    <span className="text-[0.8em] opacity-80">I'm ...</span>
                 </h1>
                 <h5 class="profession">
                         <motion.span className="different-profs" animate={{y:y?0:100}}>
-                        Web & App 
+                        Sorry 😔
                         </motion.span>  
-                    <span class="grad-span"> Developer </span>
+                    <span class="grad-span"> Neha </span>
                 </h5>
             </div>
         </section>
