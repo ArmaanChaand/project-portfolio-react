@@ -1,20 +1,26 @@
+import { useInView } from "react-intersection-observer";
 import "../css/components.css";
+import { useEffect } from "react";
 
+export default function Home({name}){
 
-export default function Home(){
+    const  [ref, inView, entry] = useInView({
+        threshold:0.5,
+    })
+   useEffect(()=>{
+    console.log(name, ": ", inView)
     
+   }, [inView])
     
     return (
-        <section className="flex flex-col justify-center items-center w-full h-full">
-            <div className="mr-auto mt-10 mb-auto w-fit">
-                <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">
-                    Welcome! 
-                    <br/>
-                    <span className="text-[0.9em] opacity-80 inline-block mt-3 sm:mt-2">My name is Armaan Chaand.</span>
-                    <br/>
-                    <span className="text-[0.8em] opacity-80 inline-block mt-3 sm:mt-2">I'm a ...</span>
+        <section ref={ref}  className="flex flex-col justify-center items-center w-full h-screen">
+            <div className="w-fit mx-auto mb-auto mt-44 px-10">
+                <h3 className="font-extrabold text-5xl text-zinc-400/50">Hi, my name is</h3>
+                <h1 className="font-extrabold leading-none tracking-tight text-9xl flex flex-row justify-center items-center flex-wrap">
+                    <span className="mr-auto">Armaan </span>
+                    <span className="ml-auto">Chaand</span>
+                    
                 </h1>
-                
             </div>
         </section>
     )
