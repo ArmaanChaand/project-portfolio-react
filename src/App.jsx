@@ -1,23 +1,27 @@
 import { Route, Routes } from "react-router";
 import "./css/App.css";
 import Home from "./home/Home";
-import { NavBtn } from "./components/NavBtn";
+import SideNav from "./components/SideNav";
+import { useEffect, useRef, useState } from "react";
+
 function App() {
+  const [section, setSection] = useState()
+
+  const projects_ref = useRef()
+
+
   return (
-    <div className="w-screen h-screen flex flex-row justify-center items-center overflow-hidden">
-    <nav className="h-full w-12 bg-green-600 sm:w-28  ">
-      
-      <ul className="h-full -rotate-90 flex flex-row justify-center items-center p-2 bg-transparent rounded gap-5">
-         <NavBtn to="/">Home</NavBtn>
-         <NavBtn to="/projects">Projects</NavBtn>
-         <NavBtn to="/about">About</NavBtn>
-      </ul>
-  </nav>
-  <div className="w-full h-full">
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-      </Routes>
-  </div>
+    <div className="w-screen h-screen flex flex-row justify-center items-center ">
+      <SideNav 
+        section={section}
+      />
+      <div className="w-full h-screen overflow-y-auto">
+          {/* <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes> */}
+          <Home name="HOME" />
+          <Home name="PROJECTS"/>
+      </div>
     </div>
   )
 }
