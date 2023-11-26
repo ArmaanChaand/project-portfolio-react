@@ -1,22 +1,8 @@
-.HOME{
-    @apply flex flex-col justify-center items-center
+.nav-tab{
+    @apply flex justify-center items-center rounded  lowercase
+    text-sm font-sans font-semibold outline-none
 }
-.HOME .intro{
-    @apply mr-auto mt-10 mb-auto w-fit
-}
-
-.main-heading{
-    @apply mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl 
-}
-.profession {
-    @apply mt-0 font-semibold  uppercase    
-    text-base 2xl:text-lg leading-none overflow-hidden h-fit 
-}
-.different-profs{
-    @apply text-emerald-600 font-bold inline-block mr-2
-    py-2 translate-y-full w-24
-} 
-.grad-span{
-    @apply border px-3 py-2  rounded inline-block
+.nav-tab.active{
+    @apply text-emerald-600
 }
 

@@ -3,13 +3,3 @@ body {
     bg-white  text-zinc-900
     dark:bg-zinc-900 dark:text-white font-sans
 }
-.page-section{
-    @apply w-full h-full flex justify-center items-center
-}
-.nav-tab{
-    @apply flex justify-center items-center rounded  lowercase
-    text-sm font-sans font-semibold outline-none
-}
-.nav-tab.active{
-    @apply text-emerald-600
-}
