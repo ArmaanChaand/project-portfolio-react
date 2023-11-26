@@ -1,28 +1,24 @@
 import { Route, Routes } from "react-router";
 import "./css/App.css";
-import { NavLink } from "react-router-dom";
 import Home from "./home/Home";
+import { NavBtn } from "./components/NavBtn";
 function App() {
   return (
-    <>
-    <nav className="nav">
+    <div className="w-screen h-screen flex flex-row justify-center items-center overflow-hidden">
+    <nav className="h-full w-12 bg-teal-300 sm:w-28  ">
       
-      <ul className="tab-btns">
-          <li>
-          <NavLink to="/" className={({isActive})=>isActive ? "nav-tab active" : "nav-tab" }>Home</NavLink> 
-          </li>
-          <li>
-          <NavLink to="/projects/" className={({isActive})=>isActive ? "nav-tab active" : "nav-tab" }>Projects</NavLink> 
-          </li>
-          <li>
-          <NavLink to="/about/" className={({isActive})=>isActive ? "nav-tab active" : "nav-tab" }>About</NavLink> 
-          </li>
+      <ul className="h-full -rotate-90 flex flex-row justify-center items-center p-2 bg-transparent rounded gap-5">
+         <NavBtn to="/">Home</NavBtn>
+         <NavBtn to="/projects">Projects</NavBtn>
+         <NavBtn to="/about">About</NavBtn>
       </ul>
   </nav>
+  <div className="w-full h-full">
       <Routes>
         <Route path="/" element={<Home/>}/>
       </Routes>
-    </>
+  </div>
+    </div>
   )
 }
 

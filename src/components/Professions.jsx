@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { useCommon } from "../../context/CommonContext";
+
+import {useCommon} from "../context/CommonContext"
+
 export function Professions(){
     const {dataBase} = useCommon()
     const [professions, setProfessions] = useState([])

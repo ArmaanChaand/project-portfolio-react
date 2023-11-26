@@ -1,5 +1,6 @@
-import "./home.css";
-import { Professions } from "./components/Professions";
+import "../css/components.css";
+import { Professions } from "../components/Professions";
+
 
 export default function Home(){
     
@@ -18,9 +19,6 @@ export default function Home(){
                     <Professions/>  
                     <span className="grad-span"> Developer </span>
                 </h5>
-            </div>
-            <div className="contacts">
-                Email   
             </div>
         </section>
     )

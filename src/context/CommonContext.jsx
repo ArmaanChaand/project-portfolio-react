@@ -10,7 +10,7 @@ function CommonProvider({ children }) {
   // Define the shared state and functions here
   const [dataBase, setDataBase] = useState({});
   useEffect(()=>{
-    const URL = getDbUrl()
+    const URL = "/db/db.json"
     fetch(URL).then(res => res.json())
     .then(data => setDataBase(data))
     .catch(error => console.log(error))
