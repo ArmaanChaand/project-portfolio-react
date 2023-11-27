@@ -1,14 +1,9 @@
-import { Route, Routes } from "react-router";
 import "./css/App.css";
 import Home from "./home/Home";
 import SideNav from "./components/SideNav";
-import { useEffect, useRef, useState } from "react";
 import SetSectionWrapper from "./components/SetSectionWrapper";
 
 function App() {
-  
-
-  const projects_ref = useRef()
 
 
   return (
@@ -16,7 +11,7 @@ function App() {
       <SideNav 
         
       />
-      <div className="w-full h-screen overflow-y-auto">
+      <div className="w-full h-screen overflow-y-auto overflow-x-hidden">
         
           <Home name="HOME" />
           <SetSectionWrapper name="PROJECTS">
