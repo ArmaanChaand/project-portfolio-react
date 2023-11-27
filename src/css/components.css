@@ -1,8 +1,8 @@
 .nav-tab{
     @apply flex justify-center items-center rounded  lowercase
-    text-sm font-sans font-semibold outline-none 
+    text-sm sm:text-base font-semibold transition-colors
 }
 .nav-tab.active{
-    @apply text-zinc-900 font-bold
+    @apply text-emerald-600 
 }
 

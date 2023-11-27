@@ -16,10 +16,14 @@ function CommonProvider({ children }) {
     .catch(error => console.log(error))
   }, [])
 
-  // You can define functions to update the shared state here
+
+  const [section_inview, set_section_inview] = useState("HOME")
+
 
   return (
-    <CommonContext.Provider value={{ dataBase }}>
+    <CommonContext.Provider value={{ 
+      dataBase, section_inview, set_section_inview,
+      }}>
       {children}
     </CommonContext.Provider>
   );
