@@ -27,19 +27,19 @@ export default function Home({name}){
     return (
         <SetSectionWrapper name={name} className="relative overflow-hidden">
             <motion.div  
-                className="w-fit mx-auto mb-auto mt-10 sm:mt-44 z-10 flex flex-col justify-center items-center "
+                className="w-fit mx-auto mb-auto mt-10 sm:mt-36 z-10 flex flex-col justify-center items-center overflow-hidden"
                 initial="hidden"
                 animate="visible"
                 variants={container}
             >
                 <motion.h3
-                    className="font-extrabold text-2xl sm:text-5xl text-zinc-400/50 mr-auto mb-5"
+                    className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-9xl text-zinc-400/50 mr-auto mb-5"
                     variants={item}
                 >
                     Hi, my name is
                 </motion.h3>
                 <motion.h1
-                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-9xl flex flex-row justify-center items-center flex-wrap"
+                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-9xl 2xl:text-[16rem] flex flex-row justify-center items-center flex-wrap"
                     variants={item}
                 
                 >
@@ -47,7 +47,7 @@ export default function Home({name}){
                     <span className="ml-auto">Chaand </span>
                 </motion.h1>
                 <motion.h3 
-                    className="font-extrabold mt-5 text-3xl sm:text-4xl text-emerald-600 ml-auto text-end"
+                    className="font-extrabold mt-5 text-3xl sm:text-4xl 2xl:text-9xl text-emerald-600 ml-auto text-end"
                     variants={item}
                 >
                     a web developer
@@ -55,7 +55,7 @@ export default function Home({name}){
                 </motion.h3>
             </motion.div>
             <strong 
-                className="absolute rotate-90 sm:rotate-0 -bottom-6 sm:-bottom-32 -right-24 sm:right-0 text-[300px] sm:text-[400px] md:text-[500px] font-extrabold z-0 text-zinc-200 dark:text-zinc-800/50 tracking-[-0.1em]"
+                className="absolute rotate-90 sm:rotate-0 -bottom-6 sm:-bottom-32 -right-24 sm:right-0 text-[300px] sm:text-[400px] md:text-[500px] 2xl:text-[1000px] font-extrabold z-0 text-zinc-200 dark:text-zinc-800/50 tracking-[-0.1em]"
             >AC</strong>
         </SetSectionWrapper>
     )

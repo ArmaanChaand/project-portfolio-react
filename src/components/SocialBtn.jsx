@@ -1,5 +1,5 @@
 export function SocialBtn({href="#", className="", title="", target="_blank", children}){
-    const tw_classes = `text-lg hover:text-emerald-600 transition-colors`
+    const tw_classes = `text-lg 2xl:text-3xl hover:text-emerald-600 transition-colors`
     return (
         <a href={href} className={tw_classes + " " + className} title={title} target={target}>
             {children}
