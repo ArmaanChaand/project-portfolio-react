@@ -15,7 +15,7 @@ export default function SideNav(){
             <NavBtn section="PROJECTS">Projects</NavBtn>
             <NavBtn section="HOME">Intro</NavBtn>
             </ul> 
-            <div className="w-fit h-fit absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center gap-2">
+            <div className="w-fit h-fit absolute bottom-20 sm:bottom-10 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center gap-2">
                 <SocialBtn >
                     <FaGithubSquare/>
                 </SocialBtn>
