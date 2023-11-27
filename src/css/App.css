@@ -1,6 +1,9 @@
+:root{
+    @apply scroll-smooth
+}
 body {
     @apply w-screen h-screen flex justify-center items-center overflow-hidden
     bg-white  text-zinc-900
     dark:bg-zinc-900 dark:text-white font-sans
-    selection:bg-green-600/70
+    selection:bg-green-600/40 dark:selection:bg-green-600/70 
 }
