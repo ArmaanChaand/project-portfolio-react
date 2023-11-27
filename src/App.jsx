@@ -3,6 +3,7 @@ import "./css/App.css";
 import Home from "./home/Home";
 import SideNav from "./components/SideNav";
 import { useEffect, useRef, useState } from "react";
+import SetSectionWrapper from "./components/SetSectionWrapper";
 
 function App() {
   
@@ -16,11 +17,26 @@ function App() {
         
       />
       <div className="w-full h-screen overflow-y-auto">
-          {/* <Routes>
-            <Route path="/" element={<Home/>}/>
-          </Routes> */}
+        
           <Home name="HOME" />
-          <Home name="PROJECTS"/>
+          <SetSectionWrapper name="PROJECTS">
+          <h1
+                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-9xl flex flex-row justify-center items-center flex-wrap"
+           
+                
+                >
+                  PROJECTS
+                </h1>
+          </SetSectionWrapper>
+          <SetSectionWrapper name="ABOUT">
+          <h1
+                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-9xl flex flex-row justify-center items-center flex-wrap"
+           
+                
+                >
+                  ABOUT
+                </h1>
+          </SetSectionWrapper>
       </div>
     </div>
   )
