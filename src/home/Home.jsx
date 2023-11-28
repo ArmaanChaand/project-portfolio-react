@@ -25,21 +25,23 @@ export default function Home({name}){
       
     
     return (
-        <SetSectionWrapper name={name} className="relative overflow-hidden">
+        <SetSectionWrapper name={name} className="relative overflow-hidden pr-3">
             <motion.div  
-                className="w-fit mx-auto mb-auto mt-10 sm:mt-36 z-10 flex flex-col justify-center items-center overflow-hidden"
+                className="w-full sm:w-fit mx-auto mb-auto mt-10 
+                sm:mt-36 z-10 flex flex-col justify-center items-center overflow-hidden gap-4 sm:gap-2"
                 initial="hidden"
                 animate="visible"
                 variants={container}
             >
                 <motion.h3
-                    className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-9xl text-zinc-400/50 mr-auto mb-5"
+                    className="uppercase font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-9xl text-zinc-400/50 mr-auto"
                     variants={item}
                 >
-                    Hi, my name is
+                    Hey, I'm
                 </motion.h3>
                 <motion.h1
-                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-7xl md:text-8xl lg:text-9xl 2xl:text-[16rem] flex flex-row justify-center items-center flex-wrap"
+                    className="font-extrabold leading-none tracking-tight  text-5xl sm:text-7xl uppercase 
+                    md:text-8xl lg:text-9xl 2xl:text-[16rem] flex flex-row justify-between items-center sm:gap-5 2xl:gap-20 flex-wrap"
                     variants={item}
                 
                 >
@@ -47,16 +49,14 @@ export default function Home({name}){
                     <span className="ml-auto">Chaand </span>
                 </motion.h1>
                 <motion.h3 
-                    className="font-extrabold mt-5 text-3xl sm:text-4xl 2xl:text-9xl text-emerald-600 ml-auto text-end"
+                    className="font-extrabold text-3xl sm:text-4xl 2xl:text-9xl text-emerald-600 ml-auto text-end"
                     variants={item}
                 >
                     a web developer
                     <span className="font-serif">.</span>
                 </motion.h3>
             </motion.div>
-            <strong 
-                className="absolute rotate-90 sm:rotate-0 -bottom-6 sm:-bottom-32 -right-24 sm:right-0 text-[300px] sm:text-[400px] md:text-[500px] 2xl:text-[1000px] font-extrabold z-0 text-zinc-200 dark:text-zinc-800/50 tracking-[-0.1em]"
-            >AC</strong>
+            
         </SetSectionWrapper>
     )
 }
