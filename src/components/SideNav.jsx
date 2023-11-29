@@ -5,7 +5,7 @@ import { SocialBtn } from "./SocialBtn";
 export default function SideNav(){
     
     return (
-        <nav className="h-full w-16 sm:w-28 2xl:w-44 flex justify-center items-center relative">
+        <nav className="h-screen w-16 sm:w-28 2xl:w-44 flex justify-center items-center relative">
             <ul className="-rotate-90 flex flex-row 
             justify-center items-center p-2 bg-transparent rounded gap-5 
             absolute top-0 translate-y-[300%] 2xl:translate-y-[500%]
