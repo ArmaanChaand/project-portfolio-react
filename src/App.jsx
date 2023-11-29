@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="w-screen h-screen flex flex-row justify-center items-center overflow-hidden">
+    <div className="w-screen h-fit flex flex-row justify-center items-center ">
       <strong 
           className="lowercase fixed rotate-90 sm:rotate-0 -bottom-6 sm:-bottom-32 -right-24 sm:right-10 
           text-[300px] sm:text-[400px] md:text-[500px] 2xl:text-[1000px] 
