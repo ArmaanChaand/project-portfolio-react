@@ -16,7 +16,7 @@ function CommonProvider({ children }) {
     .catch(error => console.log(error))
   }, [])
 
-  const [popup_img_src, set_popup_img_src] = useState(null)
+ 
 
   const [section_inview, set_section_inview] = useState("HOME")
 
@@ -24,7 +24,6 @@ function CommonProvider({ children }) {
   return (
     <CommonContext.Provider value={{ 
       dataBase, section_inview, set_section_inview,
-      popup_img_src, set_popup_img_src,
       }}>
       {children}
     </CommonContext.Provider>

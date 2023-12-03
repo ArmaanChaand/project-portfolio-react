@@ -3,11 +3,9 @@ import Home from "./home/Home";
 import SideNav from "./components/SideNav";
 import SetSectionWrapper from "./components/SetSectionWrapper";
 import Projects from "./projects/Projects";
-import { useCommon } from "./context/CommonContext";
-import { PopImgBox } from "./components/Images";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const {popup_img_src} = useCommon()
 
 
   return (
@@ -20,10 +18,11 @@ function App() {
       <SideNav 
         
       />
-      {popup_img_src && <PopImgBox/>}
       <div className="w-full h-screen overflow-y-auto overflow-x-hidden z-10 snap-y">
-        
-          <Home name="HOME" />
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Home name="HOME" />
           <Projects name="PROJECTS"/>
           <SetSectionWrapper name="ABOUT">
           <h1
@@ -34,6 +33,10 @@ function App() {
                   ABOUT
                 </h1>
           </SetSectionWrapper>
+              </>
+            }/>
+            
+          </Routes>
       </div>
     </div>
   )
