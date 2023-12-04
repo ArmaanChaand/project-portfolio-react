@@ -4,9 +4,15 @@ import SideNav from "./components/SideNav";
 import SetSectionWrapper from "./components/SetSectionWrapper";
 import Projects from "./projects/Projects";
 import { Route, Routes } from "react-router-dom";
+import { useCommon } from "./context/CommonContext";
+import { useEffect } from "react";
+
 
 function App() {
-
+  const {section_inview} = useCommon()
+  useEffect(()=>{
+    // document.body.dataset.section = section_inview
+  }, [section_inview])
 
   return (
     <div className="w-screen h-fit flex flex-row justify-center items-center ">
@@ -24,7 +30,7 @@ function App() {
               <>
                 <Home name="HOME" />
           <Projects name="PROJECTS"/>
-          <SetSectionWrapper name="ABOUT">
+          <SetSectionWrapper className="h-full" name="ABOUT">
           <h1
                     className="font-extrabold leading-none tracking-tight text-5xl sm:text-9xl flex flex-row justify-center items-center flex-wrap"
            

@@ -6,5 +6,8 @@ body {
     bg-white  text-zinc-900
     dark:bg-black dark:text-white font-sans
     selection:bg-green-600/40 dark:selection:bg-green-600/70 
-
+    transition-all
+}
+body[data-section="PROJECTS"]{
+    @apply bg-zinc-300  dark:bg-zinc-950 
 }
