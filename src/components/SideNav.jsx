@@ -14,7 +14,7 @@ export default function SideNav(){
            
             >
 
-            <NavBtn section="ABOUT">About</NavBtn>
+            <NavBtn section="CONTACT">Contact</NavBtn>
             <NavBtn section="PROJECTS">Projects</NavBtn>
             <NavBtn section="HOME">Intro</NavBtn>
             </ul> 

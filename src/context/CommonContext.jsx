@@ -1,21 +1,10 @@
 // CommonContext.js
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { getDbUrl } from '../assets/utils';
+import React, { createContext, useContext, useState} from 'react';
 
-// Create a new context
 const CommonContext = createContext();
 
-// Create a provider component that will wrap your app
 function CommonProvider({ children }) {
-  // Define the shared state and functions here
-  const [dataBase, setDataBase] = useState({});
-  useEffect(()=>{
-    const URL = "/db/db.json"
-    fetch(URL).then(res => res.json())
-    .then(data => setDataBase(data))
-    .catch(error => console.log(error))
-  }, [])
-
+ 
  
 
   const [section_inview, set_section_inview] = useState("HOME")
@@ -23,7 +12,7 @@ function CommonProvider({ children }) {
 
   return (
     <CommonContext.Provider value={{ 
-      dataBase, section_inview, set_section_inview,
+     section_inview, set_section_inview,
       }}>
       {children}
     </CommonContext.Provider>
