@@ -1,11 +1,11 @@
 import "./css/App.css";
 import Home from "./home/Home";
 import SideNav from "./components/SideNav";
-import SetSectionWrapper from "./components/SetSectionWrapper";
 import Projects from "./projects/Projects";
 import { Route, Routes } from "react-router-dom";
 import { useCommon } from "./context/CommonContext";
 import { useEffect } from "react";
+import Contact from "./contact/Contact";
 
 
 function App() {
@@ -24,21 +24,13 @@ function App() {
       <SideNav 
         
       />
-      <div className="w-full h-screen overflow-y-auto overflow-x-hidden z-10 snap-y">
+      <div className="w-full h-screen overflow-y-auto overflow-x-hidden z-10">
           <Routes>
             <Route path="/" element={
               <>
                 <Home name="HOME" />
-          <Projects name="PROJECTS"/>
-          <SetSectionWrapper className="h-full" name="ABOUT">
-          <h1
-                    className="font-extrabold leading-none tracking-tight text-5xl sm:text-9xl flex flex-row justify-center items-center flex-wrap"
-           
-                
-                >
-                  ABOUT
-                </h1>
-          </SetSectionWrapper>
+                <Projects name="PROJECTS"/>
+                <Contact name="CONTACT"/>
               </>
             }/>
             

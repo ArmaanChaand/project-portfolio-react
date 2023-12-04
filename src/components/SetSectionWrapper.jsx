@@ -16,7 +16,7 @@ export default function SetSectionWrapper({name="", className="", children}){
    }, [inView])
    
     
-   const tw_classes = `flex flex-col justify-center items-center w-full snap-center`
+   const tw_classes = `flex flex-col justify-center items-center w-full`
 
     return (
         <section ref={ref} id={`SECTION_ID_${name}`}  className={tw_classes + ' ' + className}>
