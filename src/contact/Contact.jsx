@@ -34,7 +34,7 @@ export default function Contact({name}){
                 <div 
                     className="h-fit py-14 w-full bg-black text-white dark:bg-white dark:text-zinc-900 z-10 
                     flex flex-col justify-evenly items-start pl-10 gap-5">
-                    <h4 className="text-3xl font-bold">Get in touch</h4>
+                    <h4 className="text-3xl font-bold">Feel free to reach out</h4>
                     <a href="mailto:armaan.chaand17@gmail.com" className="group flex flex-row justify-center items-center text-lg gap-5">
                         <span className="text-2xl"><MdEmail/></span>
                         <span className="text-sm dark:font-semibold group-hover:underline">armaan.chaand17@gmail.com</span>
